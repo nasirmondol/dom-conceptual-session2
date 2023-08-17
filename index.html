@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom conceptual session</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="flex">
+        <div class="grid grid-cols-3 w-full	 gap-8 mt-10 p-8">
+            <div class="card card-compact shadow-xl">
+                <figure><img class="w-200" src="https://plazahollandi.com/wp-content/uploads/2022/12/5-2.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title"><span>Red rose</span></h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>Price: 40 $</p>
+                    <div class="card-actions">
+                        <button onclick="handleClickButton(this)" class="bg-red-400 px-4 py-2 text-white rounded-lg">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-compact shadow-xl">
+                <figure><img src="https://plazahollandi.com/wp-content/uploads/2022/12/5-2.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title"><span>White rose</span></h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>Price: 10 $</p>
+                    <div class="card-actions">
+                        <button onclick="handleClickButton(this)"  class="bg-red-400 px-4 py-2 text-white rounded-lg">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-compact shadow-xl">
+                <figure><img src="https://plazahollandi.com/wp-content/uploads/2022/12/5-2.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title"><span>Pink Rose</span></h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>Price: 100 $</p>
+                    <div class="card-actions">
+                        <button onclick="handleClickButton(this)" class="bg-red-400 px-4 py-2 text-white rounded-lg">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div id="cart-container" class="w-1/4  mt-10 p-8">
+            <h3 class="text-2xl font-bold">Code: <span id="hero">Hero</span></h3>
+            <p>Total: <span id="cart-total">00</span></p>
+            <p>Discount: <span id="discount">00</span></p>
+            <h3 class="text-2xl font-bold">Grand Total: <span id="grand-total">00</span></h3>
+        </div>
+    </section>
+    <script src="test.js"></script>
+</body>
+
+</html>
